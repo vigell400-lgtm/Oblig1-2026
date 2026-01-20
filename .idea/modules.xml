@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Oblig1-2026.iml" filepath="$PROJECT_DIR$/.idea/Oblig1-2026.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Uke 4 OPG/Uke 4 OPG.iml" filepath="$PROJECT_DIR$/Uke 4 OPG/Uke 4 OPG.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Uke 4 OPG/.idea/Oblig/no.hvl.data102.filmarkiv.adt/no.hvl.data102.filmarkiv.adt.iml" filepath="$PROJECT_DIR$/Uke 4 OPG/.idea/Oblig/no.hvl.data102.filmarkiv.adt/no.hvl.data102.filmarkiv.adt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Uke 4 OPG/.idea/Oblig/no.hvl.data102.filmarkiv.impl/no.hvl.data102.filmarkiv.impl.iml" filepath="$PROJECT_DIR$/Uke 4 OPG/.idea/Oblig/no.hvl.data102.filmarkiv.impl/no.hvl.data102.filmarkiv.impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Uke 4 OPG/.idea/Oblig/no.hvl.data102.filmarkiv.klient/no.hvl.data102.filmarkiv.klient.iml" filepath="$PROJECT_DIR$/Uke 4 OPG/.idea/Oblig/no.hvl.data102.filmarkiv.klient/no.hvl.data102.filmarkiv.klient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Uke 4 OPG/.idea/Oblig/no.hvl.data102.filmarkiv.test/no.hvl.data102.filmarkiv.test.iml" filepath="$PROJECT_DIR$/Uke 4 OPG/.idea/Oblig/no.hvl.data102.filmarkiv.test/no.hvl.data102.filmarkiv.test.iml" />
+    </modules>
+  </component>
+</project>
