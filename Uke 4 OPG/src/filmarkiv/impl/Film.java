@@ -1,5 +1,7 @@
 package filmarkiv.impl;
 
+import java.util.Objects;
+
 public class Film {
 
     private int filmnr;
@@ -9,7 +11,10 @@ public class Film {
     private String filmselskap;
     private Sjanger sjanger;
 
-    Film (int filmnr, String filmskaper, String tittel, int ar, String filmselskap, Sjanger sjanger) {
+    public Film () {
+    }
+
+    public Film (int filmnr, String filmskaper, String tittel, int ar, String filmselskap, Sjanger sjanger) {
         this.filmnr = filmnr;
         this.filmskaper = filmskaper;
         this.tittel = tittel;
@@ -19,10 +24,10 @@ public class Film {
     }
 
         public int getFilmnr(){
-            return filmnr;
+        return filmnr;
         }
         public void setFilmnr(int filmnr){
-            this.filmnr=filmnr;
+        this.filmnr=filmnr;
         }
 
         public String getFilmskaper(){
@@ -64,6 +69,18 @@ public class Film {
             this.sjanger=sjanger;
         }
 
+        @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Film film = (Film) obj;
+        return filmnr == film.filmnr;
+        }
+
+        @Override
+    public int hashCode() {
+        return Objects.hash(filmnr);
+        }
     }
 
 
