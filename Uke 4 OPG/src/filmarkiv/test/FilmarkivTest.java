@@ -4,6 +4,7 @@ import filmarkiv.adt.FilmarkivADT;
 import filmarkiv.impl.Film;
 import filmarkiv.impl.Filmarkiv;
 import filmarkiv.impl.Sjanger;
+import filmarkiv.klient.Filmarkiv2;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -52,7 +53,8 @@ public class FilmarkivTest {
 
     @BeforeEach
     public void setup() {
-        arkiv = new Filmarkiv(2);
+        // arkiv = new Filmarkiv(2);
+        arkiv = new Filmarkiv2();
     }
 
     @Test
@@ -89,5 +91,14 @@ public class FilmarkivTest {
         assertEquals(1, arkiv.antall());
         assertNull(arkiv.finnFilm(1));
         assertNotNull(arkiv.finnFilm(2));
+    }
+
+    @Test
+    public void testSoekTittel() {
+        arkiv.leggTilFilm(new Film(1, "Nolan", "Inception", 2000, "Disney", Sjanger.SCIFI));
+        arkiv.leggTilFilm(new Film(2, "Jen", "Mulan", 2020, "Pixar", Sjanger.DRAMA));
+
+        Film[] resultat = arkiv.soekTittel("in");
+        assertEquals(1, resultat.length);
     }
 }
